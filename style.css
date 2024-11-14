@@ -12,31 +12,15 @@ body {
   /* Header */
   header.jumbotron {
     padding: 2rem;
-    background: #333;
+    background: #ffc107;
     color: white;
-     background: linear-gradient(360deg, #333, #ffc107, #ddd);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-    
   }
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
   
   header h1 {
     font-size: 2.5rem;
     color: #333;
     font-weight: bold;
+    margin-bottom: 15px;
   }
   header p {
     font-size: 1.3rem;
@@ -64,7 +48,7 @@ body {
   
   section h2 {
     color: #333;
-    border-bottom: 2px solid #ffc107;
+    border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
   }
@@ -75,8 +59,9 @@ body {
   }
   
   .container {
-    background-color: #ddd;
+    background: #ffc107;
     border-radius: 8px;
+    opacity: 80%;
   }
 
   /* Footer */
@@ -90,9 +75,7 @@ body {
     margin: 0;
   }
 #training-plan {
-  background-image: url('./mitchell-luo-HexbdGWe7I8-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
+  background: #ffc107;
 }
 
   /* Card Styles */
@@ -112,14 +95,14 @@ body {
 /* Card Title Styling */
 .workout-card .card-title {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #ffc107;
 }
 
 /* Subtitle Styling */
 .workout-card .card-subtitle {
-  font-size: 1.4rem;
-  color: #b4b4b4;
+  font-size: 1.5rem;
+  color: #ffffff;
 }
 
 /* List Styles */
@@ -149,7 +132,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid #ffc107;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 10px;
@@ -223,6 +206,7 @@ body {
   background-image: url('./83.jpg');
   background-size: cover;
   background-position: center;
+  background-blend-mode: darken;
 }
 
 .tuesday-card {
@@ -235,12 +219,14 @@ body {
   background-image: url('./criminal-handcuffs.jpg');
   background-size: cover;
   background-position: center;
+  background-blend-mode: darken;
 }
 
 .thursday-card {
   background-image: url('./spencer-davis-0ShTs8iPY28-unsplash.jpg');
   background-size: cover;
   background-position: center;
+  background-blend-mode: darken;
 }
 
 .friday-card {
@@ -259,6 +245,7 @@ body {
   background-image: url('./victor-freitas-WvDYdXDzkhs-unsplash.jpg');
   background-size: cover;
   background-position: center;
+  background-blend-mode: darken;
 }
 
 /* Content styling to overlay on the background */
