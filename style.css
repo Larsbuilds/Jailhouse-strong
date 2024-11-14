@@ -260,8 +260,4 @@ body {
   z-index: 2; /* Places content over the overlay */
 }
 
-/* Hover effect */
-.workout-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
+
