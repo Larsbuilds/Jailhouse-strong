@@ -62,6 +62,7 @@ body {
     background: #ffc107;
     border-radius: 8px;
     opacity: 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   /* Footer */
@@ -88,6 +89,11 @@ body {
 
 /* Hover effect */
 .workout-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.container:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
