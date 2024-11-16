@@ -58,13 +58,38 @@ body {
     padding-left: 1.5rem;
   }
   
-  .container {
-    background: #ffc107;
-    border-radius: 8px;
-    opacity: 80%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+/* Add an overlay with 80% opacity to the .container */
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent overlay */
+  z-index: 1; /* Places the overlay below the text */
+}
 
+/* Ensure the .container is positioned correctly */
+.container {
+  background: #ffc107;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease; /* Smooth transition for hover effect */
+  position: relative; /* Ensures the pseudo-element is positioned relative to this container */
+  opacity: 80%;
+}
+
+/* Ensure the text content remains fully visible */
+.container > * {
+  position: relative; /* Places text content above the overlay */
+  z-index: 2; /* Ensures text stays above the overlay */
+  color: #333; /* Optional: Sets text color for readability */
+}
+
+.container:hover {
+  opacity: 100%;
+   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease; /* Smooth transition for hover effect */
+}
   /* Footer */
   footer {
     background: #333;
