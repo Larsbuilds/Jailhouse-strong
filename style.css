@@ -41,6 +41,28 @@ body {
     color: #ffc107 !important;
   }
   
+/* Fix the hamburger icon while keeping it aligned with the navbar */
+.navbar-toggler {
+  position: fixed;
+  right: 15px; /* Aligns the icon to the right */
+  top: 1; /* Aligns with the top of the viewport */
+  height: 54px; /* Match the navbar height */
+  display: flex; /* Centers the icon vertically */
+  align-items: center;
+  z-index: 1040; /* Keeps it above the content */
+}
+
+/* Ensure the navbar scrolls normally */
+.navbar {
+  position: relative;
+  z-index: 1000; /* Lower than the icon */
+}
+
+/* Optional: Add padding to prevent content overlap when scrolling */
+body {
+  padding-top: 0px; /* Match the height of the navbar */
+}
+  
   /* Sections */
   section {
     padding: 1rem 0;
