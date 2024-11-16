@@ -150,7 +150,10 @@ body {
   .workout-card {
     margin-bottom: 1rem;
   }
-}
+    .container {
+      width: 90%;
+    }
+  }
 
 /* Ensures all cards are the same height */
 .row {
