@@ -3,10 +3,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('./criminal-handcuffs.jpg');
-  background-size: cover;
-  background-position: center;
-}
+    background-image: url('./criminal-handcuffs.webp');
+    background-size: cover;
+    background-position: center;
+    }
   
   
   /* Header */
@@ -87,7 +87,7 @@ body {
 }
 
 .container:hover {
-  opacity: 100%;
+  opacity: 99%;
    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease; /* Smooth transition for hover effect */
 }
   /* Footer */
