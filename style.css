@@ -31,10 +31,13 @@ body {
   .navbar-brand {
     font-weight: bold;
     color: #ffc107 !important;
+    
+    
   }
   
   .navbar-nav .nav-link {
     color: #ddd !important;
+    
   }
   
   .navbar-nav .nav-link:hover {
@@ -44,7 +47,7 @@ body {
 /* Fix the hamburger icon */
 .navbar-toggler {
   position: fixed;
-  top: 0; /* Aligns the button with the top of the screen */
+  top: 0px; /* Aligns the button with the top of the screen */
   right: 15px; /* Keeps it aligned to the right */
   z-index: 1040; /* Ensures it's above the navbar content */
   height: 56px; /* Matches navbar height */
@@ -55,19 +58,20 @@ body {
 /* Position the collapse menu dynamically */
 .collapse {
   position: fixed;
-  top: 0px; /* Position the menu right below the fixed button */
-  right: 0; /* Align the menu with the right side */
+  top: 56px; /* Position the menu right below the fixed button */
+  right: 0px; /* Align the menu with the right side */
   width: 100%; /* Ensure full-width menu for mobile screens */
   z-index: 1030; /* Ensure it appears below the button */
   background-color: #343a40; /* Matches the navbar's color */
   padding: 10px 15px; /* Add padding for better layout */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
-
-  transition: transform 0.3s ease,}
+  
+}
 
 /* When the menu is open */
 .collapse.show {
   display: block; /* Ensures visibility when expanded */
+  opacity: 90%;
 }
   
   /* Sections */
