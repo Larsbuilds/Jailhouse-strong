@@ -65,7 +65,18 @@ body {
   background-color: #343a40; /* Matches the navbar's color */
   padding: 10px 15px; /* Add padding for better layout */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
-  
+  transition: all 0.3s ease-in-out;
+}
+
+/* Make sure the expanded navbar content is visible */
+.navbar-collapse {
+  background-color: #343a40; /* Matches the navbar's background */
+  color: #fff; /* Ensures text is visible */
+}
+
+/* Optional: Adjust the link styles when the navbar is expanded */
+.navbar-nav .nav-link {
+  color: #fff; /* White text for better visibility */
 }
 
 /* When the menu is open */
