@@ -47,7 +47,7 @@ body {
   padding: 10px 15px;
   display: flex;
   align-items: center;
-  height: 56px; /* Match the height of the navbar */
+  height: 40px; /* Match the height of the navbar */
 }
 
 /* Fix the hamburger icon */
@@ -64,13 +64,12 @@ body {
 /* Collapse menu styles */
 .collapse {
   position: fixed; /* Keeps the menu in position below the navbar */
-  top: 56px; /* Ensures the menu appears just below the fixed navbar */
+  top: 48px; /* Ensures the menu appears just below the fixed navbar */
   right: 0;
   width: 100%; /* Full width for mobile-friendly layout */
   z-index: 1040; /* Below the toggler but above content */
-  background-color: #343a40; /* Matches navbar background */
+  background-color: #212529; /* Matches navbar background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better separation */
-  padding: 10px 15px;
 }
 
 /* Navbar link styles */
@@ -91,6 +90,7 @@ body {
 .collapse.navbar-collapse.show {
   display: block; /* Visible when toggled */
 }
+
 
   /* Sections */
   section {
@@ -141,6 +141,7 @@ body {
   opacity: 99%;
    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease; /* Smooth transition for hover effect */
 }
+
   /* Footer */
   footer {
     background: #333;

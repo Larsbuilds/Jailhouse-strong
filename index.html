@@ -54,8 +54,10 @@
     });
   </script>
 
+  
+
    <!-- Header -->
-   <header class="jumbotron text-center text-white py-5 mt-5">
+   <header class="jumbotron text-center text-white pt-5 mt-5">
     <h1>Jailhouse Strong Training Plan</h1>
     <p>Build Muscle and Strength with Minimal Equipment</p>
   </header>
@@ -241,5 +243,27 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--automatic hover for .container on mobile-->
+  <script>
+    // JavaScript code goes here
+    const container = document.querySelector('.container');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('hover');
+          } else {
+            entry.target.classList.remove('hover');
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    observer.observe(container);
+  </script>
 </body>
 </html>
