@@ -245,25 +245,32 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!--automatic hover for .container on mobile-->
   <script>
-    // JavaScript code goes here
-    const container = document.querySelector('.container');
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.querySelector('.container');
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('hover');
-          } else {
-            entry.target.classList.remove('hover');
+      if (container) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Add the 'hover' class when the container enters the viewport
+                entry.target.classList.add('hover');
+              } else {
+                // Remove the 'hover' class when the container exits the viewport
+                entry.target.classList.remove('hover');
+              }
+            });
+          },
+          {
+            threshold: 0.5, // Trigger when 50% of the container is visible
           }
-        });
-      },
-      {
-        threshold: 0.5,
-      }
-    );
+        );
 
-    observer.observe(container);
+        observer.observe(container);
+      } else {
+        console.error("Container not found!");
+      }
+    });
   </script>
 </body>
 </html>
