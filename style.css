@@ -344,3 +344,7 @@ section {
   scroll-margin-top: 70px; /* Adjust this value to match the navbar height */
 }
 
+.nav-link.active {
+  color: #ffc107 !important; /* Highlight color */
+  font-weight: bold; /* Optional: Add emphasis */
+}
