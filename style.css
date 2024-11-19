@@ -339,5 +339,8 @@ body {
   position: relative;
   z-index: 2; /* Places content over the overlay */
 }
-
+/* Adjust for navbar height */
+section {
+  scroll-margin-top: 70px; /* Adjust this value to match the navbar height */
+}
 
