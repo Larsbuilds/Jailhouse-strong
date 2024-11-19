@@ -245,26 +245,18 @@
   
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const sections = document.querySelectorAll("section");
-      const navLinks = document.querySelectorAll(".nav-link");
+      const containers = document.querySelectorAll(".container");
   
       window.addEventListener("scroll", () => {
-        let currentSection = "";
+        containers.forEach((container) => {
+          const rect = container.getBoundingClientRect();
+          const isVisible = rect.top >= 0 && rect.top <= window.innerHeight / 2;
   
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 70; // Offset for navbar height
-          const sectionHeight = section.clientHeight;
-  
-          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-            currentSection = section.getAttribute("id");
-          }
-        });
-  
-        // Remove active class from all links
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${currentSection}`) {
-            link.classList.add("active");
+          // Add or remove hover-effect class
+          if (isVisible) {
+            container.classList.add("hover-effect");
+          } else {
+            container.classList.remove("hover-effect");
           }
         });
       });
