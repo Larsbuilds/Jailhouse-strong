@@ -63,7 +63,6 @@ body {
 
 /* Collapse menu styles */
 .collapse {
-  position: fixed; /* Keeps the menu in position below the navbar */
   top: 10px; /* Ensures the menu appears just below the fixed navbar */
   left: 200px;
   width: 100%; /* Full width for mobile-friendly layout */
