@@ -64,8 +64,8 @@ body {
 /* Collapse menu styles */
 .collapse {
   position: fixed; /* Keeps the menu in position below the navbar */
-  top: 48px; /* Ensures the menu appears just below the fixed navbar */
-  right: 0;
+  top: 10px; /* Ensures the menu appears just below the fixed navbar */
+  left: 200px;
   width: 100%; /* Full width for mobile-friendly layout */
   z-index: 1040; /* Below the toggler but above content */
   background-color: #212529; /* Matches navbar background */
